@@ -1,0 +1,666 @@
+/* gris oscuro = #1d252c */
+/* gris claro = #626262 */
+/* background gris = #1b2127 */
+/*celeste = #026fff*/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?j97917');
+  src:  url('../fonts/icomoon.eot?j97917#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?j97917') format('truetype'),
+    url('../fonts/icomoon.woff?j97917') format('woff'),
+    url('../ fonts/icomoon.svg?j97917#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e901";
+  color: #ffffff;
+}
+.icon-github:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\e902";
+}
+.icon-instagram:before {
+  content: "\e903";
+}
+.icon-facebook1:before {
+  content: "\e904";
+}
+.icon-brand3:before {
+  content: "\e904";
+}
+.icon-social3:before {
+  content: "\e904";
+}
+.icon-menu:before {
+  content: "\e905";
+}
+
+body{
+   font-family: 'Source Sans Pro', sans-serif;
+   margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+.burger-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  color: white;
+}
+
+.menu ol {
+  margin: 0px;
+}
+
+h1{
+  font-size: 40px;
+  line-height: 1.5em;
+  letter-spacing: -.2px;
+  color: white;
+  margin: 0;
+}
+h1 strong {
+  color : #026fff;
+}
+
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  /* el bold la hace negrita, pero al no haber descargado negrita al bajar la fuente, esto aquí no tiene ningun efecto */
+  margin-bottom: 40px;
+}
+
+.hero{
+  height: 300px;
+
+  background-color:  #1b2127;
+  /*background-size: 500px 300px;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position-x: right;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.hero-image{
+  object-fit: cover;
+  /* hace que no se deforme la imagen a pesar de haberle dado un width y height */
+  /* lo usamos al final, cuando dimos al documento los márgenes a los lados. Así la imagen no se dimensiona mal */
+}
+
+.portfolio{
+  background: #fafafa;
+  padding: 20px;
+}
+
+.project{
+  /*border-top: 10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid blue;
+  border-bottom: 10px solid yellow;*/
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 3px 5px 33px #888888;
+  flex-wrap: wrap;
+}
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+
+.project-description{
+  font-size: 20px;
+}
+
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.project-details{
+  width: 50%;
+}
+
+.project-imageContainer{
+  width: 50%;
+  height: 360px;
+}
+
+.project-imageContainer img {
+  max-width: 100%;
+
+}
+
+.header {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure{
+  margin: 0;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  /* para quitar el subrayado que los enlaces traen por defecto */
+}
+
+.menu{
+  height: inherit;
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+}
+
+.header ol li {
+  height: inherit;
+
+}
+.header a {
+  display: flex;
+  height: inherit;
+  padding: 0 10px;
+}
+
+.footer{
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer img {
+  vertical-align: middle;
+  /* al tener un texto seguido de otro elemento, hay distintas formas de alinearlos. middle es una de ellas */
+}
+
+.footer a{
+  color: white;
+}
+
+.event-list-title{
+  margin-left: 10px;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* el wrap es para que no se cambie el tamaño de la imagen */
+}
+
+.event {
+  margin: 1%;
+  width: 48%;
+  flex-shrink: 0;
+  /* hace que no se deformen los elementos si se usa el display-flex, de esa manera se respeta el tamaño */
+  border-radius: 10px;
+  overflow: hidden;
+  /* hace que no se vean las esquinas puntiagudas de la foto, sino que sean cubiertas por el borde */
+  background: #f4fbff;
+  box-shadow: 3px 5px 33px #888888;
+
+}
+.event img {
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative; /*superpone elementos encima de otros. Ya que se tiene un margin-top de -40, este elemento se superpone sobre el otro*/
+  padding: 20px;
+  text-align: center;
+}
+
+.event-description {
+  text-align: left;
+  /* El formato del párrafo, si es a la derecha, izquierda o centro */
+}
+
+.event-url{
+  color: #056fff;
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact a{
+  text-decoration: none;
+}
+
+/* con esto quitamos la línea blanca de las fuentes de íconos */
+
+.social {
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px; /*si es una imagen .svg, es necesario usar esta propiedad, si no estuviera, los siguientes elementos de imagenes no se verían*/
+                              /*lo ponemos aquí para no repetirlo en toodos los elementos de abajo una y otra vez*/
+                              /* Ya que este es el elemento padre */
+  margin: 0 10px;
+}
+
+/* .social-link.twitter {
+  background-image: url('../Archivos para el proyecto/twitter.svg');
+} */
+/*los dos puntos es para salir de la carpeta donde se está, en este caso de css*/
+.icon-twitter{
+  font-size: 50px;
+  color: white;
+  margin: 0 -14px;
+}
+
+.icon-facebook{
+  font-size: 50px;
+}
+
+/* .social-link.facebook {
+  background-image: url('../Archivos para el proyecto/facebook.svg');
+} */
+
+/* Arriba se muesra como poner lo iconos con fuentes de iconos
+Abajo se muestra como hacerlo con imágenes
+No olvidar poner text-decoratio: none a las <a> del enlace */
+
+.social-link.github {
+  background-image: url('../Archivos para el proyecto/github.svg');
+}
+
+.social-link.instagram {
+  background-image: url('../Archivos para el proyecto/instagram.svg');
+}
+
+.form-email input{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url('../Archivos para el proyecto/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button{
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+  /*margin: 10 auto 0;*/
+}
+
+.form-email h3{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+  max-width: 1000px;
+  /* width: 100%; */
+  flex: 1;
+  margin: 0 auto;
+  /* el auto hace que se centre horizontalmente, dando el mismo margen a cada lado */
+  display: inherit;
+  /* el contenedor hereda el display del padre */
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+  /* heredamos todas las propiedades para que se pase al container, así no se pierde el formado que habíamos hecho en cada apartado */
+}
+
+/* Si hacemos Desktop first, empezar de Media Query más grande */
+
+.html-video {
+  width: 100%;
+  height: auto;
+}
+
+.youtube-video-container{
+  width: 100%;
+  height: 0;
+  background: blue;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.youtube-video{
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ width: 100%;
+ height: 100%;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+ .container{
+   padding: 0 1em;
+ }
+ .hero{
+   height: auto;
+   position: relative;
+   overflow: hidden;
+   padding: 2em;
+ }
+
+ .hero-image {
+   position: absolute;
+   z-index: 1;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top: 0;
+   width: 100%;
+ }
+
+ h1 {
+   font-size: 2em;
+   z-index: 2;
+ }
+}
+
+
+@media screen and (max-width: 767px) {
+/* El ipad tiene 768 px, por eso ponemos 767,
+para que las resoluciones menores a esa cumplan
+este media query  */
+
+.burger-button{
+  display: block;
+}
+
+.hero{
+  height: auto;
+  position: relative;
+}
+
+.hero-image {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+h1 {
+  font-size: 2em;
+  z-index: 2;
+  background: none;
+}
+
+.header {
+  display: block;
+  height: auto;
+ }
+
+.header ol{
+  display: initial;
+ }
+
+.header ol li {
+  height: 50px;
+ }
+
+.header a {
+  justify-content: center;
+  height: 40px;
+  font-size: 2em;
+  text-decoration: underline;
+  margin-bottom: .5em;
+}
+
+.header .logo{
+  text-align: center;
+}
+
+.project{
+  display: block;
+}
+
+.menu{
+  position: fixed;
+  background: rgb(5, 111, 255, .9);
+  z-index: 3;
+  top: 0;
+  width: 100vw;
+  /* height: 100vw; */
+  bottom: 0;
+  /* Ese bottom es para lograr que el align items haga efecto,
+  ya que por defecto, el elemento ol tenía display block
+  y ocupaba todo el tamaño del viewport. Por ello hicimos que
+  este elemento ahora llegue hasta el fondo de abajo, así
+  los items si se alinearon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -100vw;
+  transition: .3s;
+  /* Transición para que el menú aparezca */
+}
+
+.menu.is-active {
+  left: 0;
+  /* Esta es una clase. Si se activa, reemplazará al
+  left: -100; y hará que el menú se muestre */
+}
+
+.project-imageContainer{
+  width: auto;
+  text-align: center;
+}
+
+.project-details{
+  width:auto;
+  font-size: 16px;
+}
+/* Si no hubiese puesto los 16px, por defecto, los em toman 16px */
+
+.project-course, .project-date, .project-url {
+  margin: .3em 0;
+}
+
+.project-title{
+  font-size: 1.5em;
+  margin-bottom: .3em;
+}
+
+.project-url{
+  font-size: 1em;
+}
+
+.project-course{
+  font-size: .7em;
+}
+
+.project-date{
+  font-size: .8em;
+}
+
+.project-description{
+  font-size: 1em;
+}
+
+.event{
+  width: auto;
+  flex-shrink: initial;
+}
+
+.event img{
+  width: 100%;
+}
+
+.event-detail {
+  /* 1em = 16px */
+  margin: -2em .5em .5em;
+  padding: 1em;
+}
+
+.contact{
+  height: auto;
+}
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+.portfolio{
+  padding: 20px 0;
+}
+
+ h1 {
+   font-size: 1.5em;
+   z-index: 2;
+ }
+
+  .project-details{
+    width:auto;
+    font-size: 20px;
+  }
+
+  .event-detail {
+    /* 1em = 16px */
+    margin: -2em .5em .5em;
+    padding: 1em;
+  }
+
+  .contact{
+    height: auto;
+    padding: 1.5em 0;
+    text-align: center;
+    display: block;
+  }
+
+  .form-email button{
+    margin: 1em auto;
+  }
+
+  .form-email h3{
+    margin-top: 0;
+  }
+
+  .footer{
+    display: block;
+    text-align: center;
+    /* border: 1px solid transparent;*/
+  }
+
+  .footer-content-1{
+    margin: 0;
+  }
+}
+
+
+
+@media screen and (max-width: 320px) {
+h1{
+  font-size: 1.2em;
+  background: rgb(0,0,0,.5);
+}
+
+.hero{
+  padding: 2em 1em;
+}
+
+}
+
+/* En el docuento tuve el gran problema de poner .h1 en lugar de h1...
+Por ello no sabía por qué no reconocía los MQ de 320 y 480... */
