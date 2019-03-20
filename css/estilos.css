@@ -614,7 +614,11 @@ h1 {
 @media screen and (max-width: 480px) {
 
 .portfolio{
+<<<<<<< HEAD
   padding: 0;
+=======
+  padding: 20px 30px;
+>>>>>>> 67d809f0ddf0fd2b735ca6801e3e9683ba7fa614
 }
 
  h1 {
@@ -624,7 +628,11 @@ h1 {
 
  .project-details{
     width:auto;
+<<<<<<< HEAD
     font-size: 14px !important;
+=======
+    font-size: 10px;
+>>>>>>> 67d809f0ddf0fd2b735ca6801e3e9683ba7fa614
   }
 
   .event-detail {
