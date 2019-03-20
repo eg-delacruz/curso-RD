@@ -429,7 +429,7 @@ No olvidar poner text-decoratio: none a las <a> del enlace */
 
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
  .container{
    padding: 0 1em;
  }
@@ -462,8 +462,18 @@ No olvidar poner text-decoratio: none a las <a> del enlace */
 para que las resoluciones menores a esa cumplan
 este media query  */
 
+h2 {
+  font-size: 1.2em;
+  margin: .5em 0;
+  margin-top: 0;
+}
+
 .burger-button{
   display: block;
+}
+
+.portfolio{
+  padding: 10px 0;
 }
 
 .hero{
@@ -545,6 +555,7 @@ h1 {
 .project-imageContainer{
   width: auto;
   text-align: center;
+  height: auto;
 }
 
 .project-details{
@@ -603,7 +614,11 @@ h1 {
 @media screen and (max-width: 480px) {
 
 .portfolio{
-  padding: 20px 0;
+<<<<<<< HEAD
+  padding: 0;
+=======
+  padding: 20px 30px;
+>>>>>>> 67d809f0ddf0fd2b735ca6801e3e9683ba7fa614
 }
 
  h1 {
@@ -611,9 +626,13 @@ h1 {
    z-index: 2;
  }
 
-  .project-details{
+ .project-details{
     width:auto;
-    font-size: 20px;
+<<<<<<< HEAD
+    font-size: 14px !important;
+=======
+    font-size: 10px;
+>>>>>>> 67d809f0ddf0fd2b735ca6801e3e9683ba7fa614
   }
 
   .event-detail {
